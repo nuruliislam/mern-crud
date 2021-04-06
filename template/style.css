@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+}
+
+section{
+    padding: 8rem 0;
+}
+ul li{
+    list-style-type: none;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.6rem;
+}
+
+
+
+
+/* Navigation bar */
+
+.navbar{
+    text-align: center;
+}
+
+.navbar-nav{
+    background: #97455f;
+    /* height: 53px; */
+}
+
+.navbar ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.navbar ul li{
+
+    display: inline-block;
+    margin: 0 .5rem;
+}
+
+.navbar ul li a{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 2rem;
+}
+
+
+
+/* Reusable Component */
+
+.row{
+    max-width: 114rem;
+    margin: 1rem auto;
+}
+
+.row::before,
+.row::after{
+    content: "";
+    display: table;
+}
+
+.row::after{
+    clear: both;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.box{
+    padding: 1rem;
+}
+
+
+/* Table */
+
+table, th, td{
+    /* border: 1px solid #ddd; */
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 1rem auto;
+}
+  
+th, td {
+    /* text-align: left; */
+    padding: 1rem;
+    /* font-size: 1.4rem; */
+}
+
+td{
+    font-size: 1.5rem;
+}
+
+th{
+    background-color: #4CAF50;
+    color: rgb(54, 43, 23);
+    font-size: 2rem;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.over-x{
+    overflow-x: auto;
+}

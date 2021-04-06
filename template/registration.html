@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regi.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="registration">
+            <div class="container">
+                <div class="row text-center">
+                    <h1> Content </h1>
+                </div>
+
+                <div class="row text-center">
+                    <form>
+                        <div class="formGroup">
+                            <label for="name"> Name </label>
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+
+                        <div class="formGroup">
+                            <label for="name"> Name </label>
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+
+                        <div class="formGroup">
+                            <label for="name"> Name </label>
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+
+                        <input type="Submit" class="btn btn-submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+ <section class="registration">
+        <div class="container">
+            <div class="row text-center">
+                <h1> Content </h1>
+            </div>
+
+            <div class="row text-center">
+                <form onSubmit= { submitHandler } >
+                    <div class="formGroup">
+                        <label for="name"> Name </label>
+                        <input type="text" id="name" placeholder="Name" 
+                        required onChange={(e) => setName(e.target.value)}>
+                        />
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="name"> Name </label>
+                        <input type="text" id="name" placeholder="Name"
+                        required onChange={(e) => setEmail(e.target.value)} />
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="name"> Name </label>
+                        <input type="text" id="name" placeholder="Name"
+                        required onChange={(e) => setAddress(e.target.value)}/>
+                    </div>
+
+                    <input type="Submit" class="btn btn-submit" value="Submit"/>
+                </form>
+            </div>
+        </div>
+    </section>
